@@ -18,3 +18,8 @@ My accepted [project](https://docs.google.com/document/d/1Kn02yQQNI9qHwup5kuGEhj
 ## Community Bonding
 During the community bonding period, I started to engage with RTEMS community. I tried first to understand the code of the rtems stack check. I made a mind map of all functions and utilities provided by the stack checker. 
 <img width="12384" alt="Untitled" src="https://github.com/user-attachments/assets/326c92ac-f9fb-4663-b131-11ab2eb22a4c">
+As you may see that the stack checker code is distributed into a few of files:
+
+- `cpukit/libmisc/stackchk/check.c`: is the main file which contains all functions implementations.
+- `cpukit/include/rtems/stackchk.h`: header file that contains functions prototypes.
+- ``
