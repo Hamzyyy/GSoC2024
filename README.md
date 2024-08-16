@@ -24,11 +24,14 @@ The stack checker code is organized into a few key files:
 This mind map helped me define the scope of my project and identify the areas I needed to focus on.
 
 ## Midterm Evaluation
-This is the first part of my participation of GSoC 2024 which starts from the date of start of actual coding till the midterm evaluation. The start wasn't easy, since this is my first time participating in big project and also using `Git`. After some time trying to figure out how to start. I started by creating preparing my workspace by:
-- Create a fork of RTEMS main gitlab repo: [https://gitlab.rtems.org/Hamzi/rtems](https://gitlab.rtems.org/Hamzi/rtems).
-- Cloned my forked repo to my local machine.
-- Create new branch to contains all my work by `git checkout -b feature/stack-reporter-config`.
+This section covers the first phase of my participation in GSoC 2024, from the beginning of actual coding up to the midterm evaluation. As this is my first time working on a large project and using `Git`, the start was challenging. However, after some initial efforts to find my footing, I was able to set up my workspace as follows:
+- Forked the RTEMS main GitLab repository: [https://gitlab.rtems.org/Hamzi/rtems](https://gitlab.rtems.org/Hamzi/rtems).
+- Cloned my forked repository to my local machine.
+- Created a new branch to contain all my work using the command `git checkout -b feature/stack-reporter-config`.
 
-Then, my main goal was to make the stack checker reporter configurable. Meaning that gives the user the ability configure which reporter function to be used in his application. The default reporter provided by RTEMS was [Stack_check_report_blown_task](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L247-292) which is called by [rtems_stack_checker_switch_extension](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L298-341).
-I tackled down this by:
-- `cpukit/include/rtems/confdefs/extensions.h`: I created a new macro check to configure which reporter to be selected based on the 
+My primary goal was to make the stack checker reporter configurable, allowing users to select which reporter function to use in their applications. The default reporter provided by RTEMS was [Stack_check_report_blown_task](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L247-292) which is invoked by [rtems_stack_checker_switch_extension](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L298-341).
+To achieve this I:
+- Renamed `Stack_check_report_blown_task` to `rtems_stack_checker_reporter_print_details` and made it a public function.
+- Created a new reporter function called `rtems_stack_checker_reporter_quiet` which only call fatal error handler.
+- Updated the configuration macro in`cpukit/include/rtems/confdefs/extensions.h`to allow users to select the desired reporter based on their configuration.
+- Developed a new test case `testsuite/libtests/stackchk03` to verify that the application selects the correct reporter based on the user’s configuration.
