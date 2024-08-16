@@ -22,3 +22,11 @@ The stack checker code is organized into a few key files:
 - `cpukit/include/rtems/stackchk.h`: Header file necessary for installing the stack checker.
 - `testsuite/libtests/stackchkx`: Contains three test cases covering all aspects of the stack checker.
 This mind map helped me define the scope of my project and identify the areas I needed to focus on.
+
+## Midterm Evaluation
+This is the first part of my participation of GSoC 2024 which starts from the date of start of actual coding till the midterm evaluation. The start wasn't easy, since this is my first time participating in big project and also using `Git`. After some time trying to figure out how to start. I started by creating preparing my workspace by:
+- Create a fork of RTEMS main gitlab repo: [https://gitlab.rtems.org/Hamzi/rtems](https://gitlab.rtems.org/Hamzi/rtems).
+- Cloned my forked repo to my local machine.
+- Create new branch to contains all my work by `git checkout -b feature/stack-reporter-config`.
+
+- 
