@@ -20,5 +20,5 @@ During the community bonding period, I engaged with the RTEMS community and focu
 The stack checker code is organized into a few key files:
 - `cpukit/libmisc/stackchk/check.c`: Contains the main function implementations.
 - `cpukit/include/rtems/stackchk.h`: Header file necessary for installing the stack checker.
-- `testsuite/libtests/stackchk~x~`: Contains three test cases covering all aspects of the stack checker.
+- `testsuite/libtests/stackchk<sub>x</sub>`: Contains three test cases covering all aspects of the stack checker.
 This mind map helped me define the scope of my project and identify the areas I needed to focus on.
