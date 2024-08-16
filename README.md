@@ -27,7 +27,7 @@ This mind map helped me define the scope of my project and identify the areas I 
 This section covers the first phase of my participation in GSoC 2024, from the beginning of actual coding up to the midterm evaluation. As this is my first time working on a large project and using `Git`, the start was challenging. However, after some initial efforts to find my footing, I was able to set up my workspace as follows:
 - Forked the RTEMS main GitLab repository: [https://gitlab.rtems.org/Hamzi/rtems](https://gitlab.rtems.org/Hamzi/rtems).
 - Cloned my forked repository to my local machine.
-- Created a new branch to contain all my work using the command `git checkout -b feature/stack-reporter-config`.
+- Created a new branch to contain all my work using the command ```git checkout -b feature/stack-reporter-config```.
 
 My primary goal was to make the stack checker reporter configurable, allowing users to select which reporter function to use in their applications. The default reporter provided by RTEMS was [Stack_check_report_blown_task](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L247-292) which is invoked by [rtems_stack_checker_switch_extension](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L298-341).
 To achieve this I:
@@ -39,16 +39,16 @@ To achieve this I:
 - Added `stackch03.yml` file for the new test case in the same path above.
 Towards the midterm evaluation, the main skeleton of my project was set. Then After testing my work on my local repository I built the RTEMS project by using the following commands:
 - Go to my local repository `cd rtems`
-- `export PATH=$HOME/rtems/rtems/6/bin:"$PATH"`
-- `command -v sparc-rtems6-gcc && echo "found" || echo "not found"`
-- `cd $HOME/rtems/src/rtems`
+- ```export PATH=$HOME/rtems/rtems/6/bin:"$PATH"```
+- ```command -v sparc-rtems6-gcc && echo "found" || echo "not found"```
+- ```cd $HOME/rtems/src/rtems```
 - ```
   echo "[sparc/erc32]" > config.ini
-     echo "BUILD_TESTS = True" >> config.ini
-    ./waf configure --prefix=$HOME/quick-start/rtems/6```
--  `./waf clean`
--  `./waf`
-- Then to run all test and make sure that the new test runs correctly `rtems-test --rtems-bsp=erc32-sis build/sparc/erc32`
-- then I went to the executable file of my new testsuite `cd build/sparc/erc32/testsuites/libtests`
-- Finally to execute `stackchk03.exe` I run the command `rtems-run --rtems-bsps=erc32-sis stackchk03.exe`
+  echo "BUILD_TESTS = True" >> config.ini
+  ./waf configure --prefix=$HOME/quick-start/rtems/6```
+- ```./waf clean```
+- ```./waf```
+- Then to run all test and make sure that the new test runs correctly ```rtems-test --rtems-bsp=erc32-sis build/sparc/erc32```
+- then I went to the executable file of my new testsuite ```cd build/sparc/erc32/testsuites/libtests```
+- Finally to execute `stackchk03.exe` I run the command ```rtems-run --rtems-bsps=erc32-sis stackchk03.exe```
 
