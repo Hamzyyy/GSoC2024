@@ -38,17 +38,39 @@ To achieve this I:
 - Edited grp.yml in `rtems/spec/build/testsuites/libtest` to include the new testsuite in the build process.
 - Added `stackch03.yml` file for the new test case in the same path above.
 Towards the midterm evaluation, the main skeleton of my project was set. Then After testing my work on my local repository I built the RTEMS project by using the following commands:
-- Go to my local repository `cd rtems`
-- ```export PATH=$HOME/rtems/rtems/6/bin:"$PATH"```
-- ```command -v sparc-rtems6-gcc && echo "found" || echo "not found"```
-- ```cd $HOME/rtems/src/rtems```
-- ```
-  echo "[sparc/erc32]" > config.ini
-  echo "BUILD_TESTS = True" >> config.ini
-  ./waf configure --prefix=$HOME/quick-start/rtems/6```
-- ```./waf clean```
-- ```./waf```
-- Then to run all test and make sure that the new test runs correctly ```rtems-test --rtems-bsp=erc32-sis build/sparc/erc32```
-- then I went to the executable file of my new testsuite ```cd build/sparc/erc32/testsuites/libtests```
-- Finally to execute `stackchk03.exe` I run the command ```rtems-run --rtems-bsps=erc32-sis stackchk03.exe```
-
+Go to my local repository
+```
+cd rtems
+```
+```
+export PATH=$HOME/rtems/rtems/6/bin:"$PATH"``
+```
+```
+command -v sparc-rtems6-gcc && echo "found" || echo "not found"
+```
+```
+cd $HOME/rtems/src/rtems
+```
+```
+echo "[sparc/erc32]" > config.ini
+echo "BUILD_TESTS = True" >> config.ini
+./waf configure --prefix=$HOME/quick-start/rtems/6
+```
+```
+./waf clean
+```
+```
+./waf
+```
+Then to run all test and make sure that the new test runs correctly
+```
+rtems-test --rtems-bsp=erc32-sis build/sparc/erc32
+```
+I went to the executable file of my new testsuite
+```
+cd build/sparc/erc32/testsuites/libtests
+```
+Finally to execute `stackchk03.exe` I run the command 
+```
+rtems-run --rtems-bsps=erc32-sis stackchk03.exe
+```
