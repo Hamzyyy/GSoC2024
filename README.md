@@ -37,66 +37,70 @@ To achieve this I:
 - Developed a new test case `testsuite/libtests/stackchk03` to verify that the application selects the correct reporter based on the user’s configuration.
 - Edited grp.yml in `rtems/spec/build/testsuites/libtest` to include the new testsuite in the build process.
 - Added `stackch03.yml` file for the new test case in the same path above.
-Towards the midterm evaluation, the main skeleton of my project was set. Then After testing my work on my local repository I built the RTEMS project by using the following commands:
-Go to my local repository
+Towards the midterm evaluation, the main structure of my project was established. After thoroughly testing my work in my local repository, I proceeded to build the RTEMS project using the following commands:
+- Navigate to my local repository:
 ```
 cd rtems
 ```
+- Set up the environment path:
 ```
 export PATH=$HOME/rtems/rtems/6/bin:"$PATH"``
 ```
+- Verify the compiler installation:
 ```
 command -v sparc-rtems6-gcc && echo "found" || echo "not found"
 ```
+- Configure the build:
 ```
 cd $HOME/rtems/src/rtems
-```
-```
 echo "[sparc/erc32]" > config.ini
 echo "BUILD_TESTS = True" >> config.ini
 ./waf configure --prefix=$HOME/quick-start/rtems/6
 ```
+- Clean the build environment:
 ```
 ./waf clean
 ```
+- Build the project:
 ```
 ./waf
 ```
-Then to run all test and make sure that the new test runs correctly
+Next, I ran all the tests to ensure that the new test was functioning correctly:
+- Run all tests
 ```
 rtems-test --rtems-bsp=erc32-sis build/sparc/erc32
 ```
-I went to the executable file of my new testsuite
+- Navigate to the executable file of the new test suite:
 ```
 cd build/sparc/erc32/testsuites/libtests
 ```
-Finally to execute `stackchk03.exe` I run the command 
+- Execute the test `stackchk03.exe`:
 ```
 rtems-run --rtems-bsps=erc32-sis stackchk03.exe
 ```
-After I was sure that every thing works fine. I pushed my work to my origin repository and created a merge request to include my changes in RTEMS upstream repository. I took my a while since I managed to set a good work flow for my git repository that's keep my commits history linear and easy to review. I put here the commands I used to manage my git repository so someone may finds it useful.
-Starting at the main branch, by pulling the most recent updates from the upstream main repository.
+After confirming that everything was working correctly, I pushed my work to my origin repository and created a merge request to include my changes in the RTEMS upstream repository. This process took some time as I focused on establishing a smooth workflow for my Git repository, ensuring that my commit history remained linear and easy to review. Below are the Git commands I used, which may be helpful to others:
+- Start at the main branch by pulling the latest updates from the upstream main repository:
 ```
 git pull upstream main
 ```
-Then switching to a new branch that contains my work.
+- Switch to the branch containing my work:
 ```
 git checkout feature/stack-check-config
 ```
-After finishing coding and modifies all needed parts.
+- After completing the coding and making all necessary modifications:
 ```
 git add .
 ```
-Commiting my changes.
+- Commit the changes.
 ```
 git commit -m "commit message"
 ```
-Then fetching the most recent updates to my feature branch
+- Fetch the latest updates to my feature branch:
 ```
 git fetch upstream
 ```
-And rebase my work on top of the most recent updates of the upstream main repositories.
+Rebase my work on top of the latest updates from the upstream main repository:
 ```
 git rebase upstream/main
 ```
-Finally you can find the changes I submitted just before the midterm evaluation period [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86/diffs?diff_id=2142&start_sha=0306a70f4366031e4c8dc5d0b1e4a25b6db60bdc#ba5d304e96c420f4fa6d1983a6f6d65bba76368f_103_99). 
+You can view the changes I submitted just before the midterm evaluation period [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86/diffs?diff_id=2142&start_sha=0306a70f4366031e4c8dc5d0b1e4a25b6db60bdc#ba5d304e96c420f4fa6d1983a6f6d65bba76368f_103_99).
