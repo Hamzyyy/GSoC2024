@@ -29,4 +29,5 @@ This is the first part of my participation of GSoC 2024 which starts from the da
 - Cloned my forked repo to my local machine.
 - Create new branch to contains all my work by `git checkout -b feature/stack-reporter-config`.
 
+Then, my main goal was to make the stack checker reporter configurable. Meaning make the user configure which reporter function to be used in his application. I tackled this by doing the following:
 - 
