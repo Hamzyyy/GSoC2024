@@ -8,7 +8,7 @@ Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at
 
 My journey into embedded systems felt like discovering my true calling. Recently, I’ve become fascinated by contributing to open-source projects, inspired by the idea of global collaboration.
 
-I stumbled upon Google Summer of Code (GSoC) and found [RTEMS](https://summerofcode.withgoogle.com/programs/2024/organizations/rtems-project)(Real-Time Executive for Multiprocessor Systems) participating. Without hesitation, I wanted to join the RTEMS community to contribute to their awesome project.
+I stumbled upon Google Summer of Code (GSoC) and found [RTEMS](https://summerofcode.withgoogle.com/programs/2024/organizations/rtems-project) (Real-Time Executive for Multiprocessor Systems) participating. Without hesitation, I wanted to join the RTEMS community to contribute to their awesome project.
 
 I'm thrilled to share that I've been accepted into GSoC 2024 with RTEMS, an open-source real-time operating system used in critical applications, especially in the space industry—RTEMS has even orbited Venus, Mars, and the Sun!
 
@@ -20,5 +20,5 @@ During the community bonding period, I engaged with the RTEMS community and focu
 The stack checker code is organized into a few key files:
 - `cpukit/libmisc/stackchk/check.c`: Contains the main function implementations.
 - `cpukit/include/rtems/stackchk.h`: Header file necessary for installing the stack checker.
-- `testsuite/libtests/stackchkx`: Contains three test cases covering all aspects of the stack checker.
+- `testsuite/libtests/stackchk~x~`: Contains three test cases covering all aspects of the stack checker.
 This mind map helped me define the scope of my project and identify the areas I needed to focus on.
