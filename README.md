@@ -1,8 +1,7 @@
 # GSoC2024
+![gsoc_cern_banner_flat](https://github.com/user-attachments/assets/a5055722-9b8f-4d02-a628-115dfa4e2fe3)
+![rtemsorg300x300](https://github.com/user-attachments/assets/c392f825-505f-43c6-a2f2-3642b45a4228)
 
-![gsoc_cern_banner_flat](https://github.com/Hamzyyy/hamzy.github.io/assets/48621542/af1a84ff-0099-4b37-a27c-4d17cc5c4e7c)
-
-![rtemsorg300x160 1](https://github.com/Hamzyyy/hamzy.github.io/assets/48621542/2cff10ea-3d7b-43d0-8c80-c933e8ad4172)
 
 ## Introduction
 Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at The American University in Cairo. My passion lies in low-level software development, electronics, and embedded systems.
