@@ -74,3 +74,29 @@ Finally to execute `stackchk03.exe` I run the command
 ```
 rtems-run --rtems-bsps=erc32-sis stackchk03.exe
 ```
+After I was sure that every thing works fine. I pushed my work to my origin repository and created a merge request to include my changes in RTEMS upstream repository. I took my a while since I managed to set a good work flow for my git repository that's keep my commits history linear and easy to review. I put here the commands I used to manage my git repository so someone may finds it useful.
+Starting at the main branch, by pulling the most recent updates from the upstream main repository.
+```
+git pull upstream main
+```
+Then switching to a new branch that contains my work.
+```
+git checkout feature/stack-check-config
+```
+After finishing coding and modifies all needed parts.
+```
+git add .
+```
+Commiting my changes.
+```
+git commit -m "commit message"
+```
+Then fetching the most recent updates to my feature branch
+```
+git fetch upstream
+```
+And rebase my work on top of the most recent updates of the upstream main repositories.
+```
+git rebase upstream/main
+```
+Finally you can find the changes I submitted just before the midterm evaluation period [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86/diffs?diff_id=2142&start_sha=0306a70f4366031e4c8dc5d0b1e4a25b6db60bdc#ba5d304e96c420f4fa6d1983a6f6d65bba76368f_103_99). 
