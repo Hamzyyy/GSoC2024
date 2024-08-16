@@ -29,4 +29,5 @@ This is the first part of my participation of GSoC 2024 which starts from the da
 - Cloned my forked repo to my local machine.
 - Create new branch to contains all my work by `git checkout -b feature/stack-reporter-config`.
 
-Then, my main goal was to make the stack checker reporter configurable. Meaning make the user configure which reporter function to be used in his application. I tackled this by doing the following:
+Then, my main goal was to make the stack checker reporter configurable. Meaning that gives the user the ability configure which reporter function to be used in his application. The default reporter provided by RTEMS was [Stack_check_report_blown_task](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L247-292)I which is called by [rtems_stack_checker_switch_extension](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L298-341) tackled this by doing the following:
+- `cpukit/include/rtems/confdefs/extensions.h`: I created a new macro check to configure which reporter to be selected based on the 
