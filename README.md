@@ -1,7 +1,7 @@
 # GSoC2024
+
 ![gsoc_cern_banner_flat (1)](https://github.com/user-attachments/assets/0ca29584-9d71-429d-bf8d-c63a91dbfc2d)
 ![rtemsorg300x160 1 (1)](https://github.com/user-attachments/assets/bf08a22f-5f2c-49ae-9535-714905126d3e)
-
 
 ## Introduction
 Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at The American University in Cairo. My passion lies in low-level software development, electronics, and embedded systems.
@@ -106,5 +106,12 @@ git rebase upstream/main
 You can view the changes I submitted just before the midterm evaluation period [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86/diffs?diff_id=2142&start_sha=0306a70f4366031e4c8dc5d0b1e4a25b6db60bdc#ba5d304e96c420f4fa6d1983a6f6d65bba76368f_103_99).
 
 ## Final Report
+During the first phase of GSoC, my primary focus was to make the stack checker reporter configurable. I achieved this by designing a conditional preprocessor macro in `confdefs` that allows users to select the reporter function based on their application's configuration. Users can choose the default RTEMS reporter, a quiet/basic reporter or their own custom reporter. To ensure robustness, I developed the `stackchk03` test case to validate the behavior of different reporter configurations, which worked as expected.
 
+In the second phase, after optimizing and cleaning the code, I proposed changing the default reporter to a quiet reporter that only calls the fatal error handler in case of a stack overflow. This simplifies the default functionality, leaving advanced configurations to the user. The proposal was accepted, and I developed `stackchk04` testsuite to cover the full functionality of the stack checker. The testsuites now have the following structure:
+- `stackchk` Tests the default quiet reporter.
+- `stackchk03` Tests the user-defined custom reporter.
+- `stackchk04` Tests the detailed reporter.
+The changes I proposed were successfully merged into the RTEMS codebase. I'm deeply grateful to my mentors, especially Joel, for his patience and guidance.
 
+In the final days of the summer, I focused on documenting the changes introduced. I submitted two merge requests: one for adding documentation on the stack checker reporter configuration, available [here](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41) and [here](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4).
