@@ -1,6 +1,6 @@
 # GSoC2024
-![gsoc_cern_banner_flat](https://github.com/user-attachments/assets/a5055722-9b8f-4d02-a628-115dfa4e2fe3)
-![rtemsorg300x300](https://github.com/user-attachments/assets/c392f825-505f-43c6-a2f2-3642b45a4228)
+![gsoc_cern_banner_flat (1)](https://github.com/user-attachments/assets/0ca29584-9d71-429d-bf8d-c63a91dbfc2d)
+![rtemsorg300x160 1 (1)](https://github.com/user-attachments/assets/bf08a22f-5f2c-49ae-9535-714905126d3e)
 
 
 ## Introduction
