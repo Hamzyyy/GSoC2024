@@ -38,7 +38,9 @@ To achieve this I:
 - Developed a new test case `testsuite/libtests/stackchk03` to verify that the application selects the correct reporter based on the user’s configuration.
 - Edited grp.yml in `rtems/spec/build/testsuites/libtest` to include the new testsuite in the build process.
 - Added `stackch03.yml` file for the new test case in the same path above.
+
 Towards the midterm evaluation, the main structure of my project was established. After thoroughly testing my work in my local repository, I proceeded to build the RTEMS project using the following commands:
+
 Navigate to my local repository:
 ```
 cd rtems
