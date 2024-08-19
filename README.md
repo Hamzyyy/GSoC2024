@@ -138,7 +138,7 @@ Currently, I'm still in the process of updating the RTEMS documentation to refle
 
 You can check out the approved merge request for the configurable stack checker reporter [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86), as well as the merge request for the new test cases [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161). My contributions to the RTEMS upstream repository can be viewed [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4) and [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b).
 
-There's still ongoing work, including two merge requests for updating the [documentations](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41) and [specifications](https://gitlab.rtems.org/rtems/prequal/rtems-central).
+There's still ongoing work, including two merge requests for updating the [documentations](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41) and [specifications](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4).
 
 Reflecting on this amazing summer, I’m incredibly grateful for the opportunity. I’ve learned so much, especially during the challenging early days. With the support of my mentors, I made significant progress and gained invaluable experience. This was my first time working on such a large project with numerous dependencies. The manual build process was new to me, and I also learned how to use Git the right way—despite a few mishaps with my commit history! Most importantly, I overcame my initial fears and hesitations, thanks to my mentor's friendly and encouraging guidance. I can’t thank him enough. Thank you Joel!
 
