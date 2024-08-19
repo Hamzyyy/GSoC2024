@@ -1,4 +1,4 @@
-# GSoC2024
+# Google Summer of Code 2024 (GSoC 2024)
 
 ![gsoc_cern_banner_flat (1)](https://github.com/user-attachments/assets/0ca29584-9d71-429d-bf8d-c63a91dbfc2d)
 ![rtemsorg300x160 1 (1)](https://github.com/user-attachments/assets/bf08a22f-5f2c-49ae-9535-714905126d3e)
