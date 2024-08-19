@@ -82,6 +82,7 @@ Execute the test `stackchk03.exe`:
 rtems-run --rtems-bsps=erc32-sis stackchk03.exe
 ```
 After confirming that everything was working correctly, I pushed my work to my origin repository and created a merge request to include my changes in the RTEMS upstream repository. This process took some time as I focused on establishing a smooth workflow for my Git repository, ensuring that my commit history remained linear and easy to review. Below are the Git commands I used, which may be helpful to others:
+
 Start at the main branch by pulling the latest updates from the upstream main repository:
 ```
 git pull upstream main
