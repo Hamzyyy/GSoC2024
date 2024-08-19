@@ -118,3 +118,19 @@ In the final days of the summer, I focused on documenting the changes introduced
 
 ## The final Report
 
+And here we are, at the close of an incredible summer journey! This season, I had the opportunity to work on a [project](https://summerofcode.withgoogle.com/myprojects/details/li0Ns91L) which aims to gives the user the ability to configure the stack checker error handler and determine it's behavior based on their own requirements.
+
+focused on giving users the ability to configure the stack checker error handler, allowing them to tailor its behavior to their specific needs.
+
+I developed a method that enables users to configure the stack checker reporter in their applications, choosing from three options: a basic quiet reporter, a detailed reporter, or their own custom reporter. Alongside this, I created test cases for each type of error handler to ensure everything works smoothly.
+
+Currently, I'm still in the process of updating the RTEMS documentation to reflect the new features added during this project. The documentation is nearly complete and will be merged soon.
+
+You can check out the approved merge request for the configurable stack checker reporter [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86), as well as the merge request for the new test cases [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161). My contributions to the RTEMS upstream repository can be viewed [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4) and [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b).
+
+There's still ongoing work, including two merge requests for updating the [documentations](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41) and [specifications](https://gitlab.rtems.org/rtems/prequal/rtems-central).
+
+Reflecting on this amazing summer, I’m incredibly grateful for the opportunity. I’ve learned so much, especially during the challenging early days. With the support of my mentors, I made significant progress and gained invaluable experience. This was my first time working on such a large project with numerous dependencies. The manual build process was new to me, and I also learned how to use Git the right way—despite a few mishaps with my commit history! Most importantly, I overcame my initial fears and hesitations, thanks to my mentor's friendly and encouraging guidance. I can’t thank him enough. Thank you Joel!
+
+I’m excited to continue being an active member of the RTEMS community and to contribute to many more exciting projects. Who knows, maybe one day my code will be part of a mission exploring Mars, Jupiter, and beyond!
+
