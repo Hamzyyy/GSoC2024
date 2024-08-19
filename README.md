@@ -24,7 +24,7 @@ The stack checker code is organized into a few key files:
 
 This mind map helped me define the scope of my project and identify the areas I needed to focus on.
 
-## The Midterm Evaluation
+## The First Phase
 This section covers the first phase of my participation in GSoC 2024, from the beginning of actual coding up to the midterm evaluation. As this is my first time working on a large project and using `Git`, the start was challenging. However, after some initial efforts to find my footing, I was able to set up my workspace as follows:
 - Forked the RTEMS main GitLab repository: [https://gitlab.rtems.org/Hamzi/rtems](https://gitlab.rtems.org/Hamzi/rtems).
 - Cloned my forked repository to my local machine.
