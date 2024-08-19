@@ -107,6 +107,12 @@ Rebase my work on top of the latest updates from the upstream main repository:
 ```
 git rebase upstream/main
 ```
+Then finally push the changes to the origine repository
+```
+git push -f origin feature/stack-check-config
+```
+After that I created a draft merge request.
+
 You can view the changes I submitted just before the midterm evaluation period [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86/diffs?diff_id=2142&start_sha=0306a70f4366031e4c8dc5d0b1e4a25b6db60bdc#ba5d304e96c420f4fa6d1983a6f6d65bba76368f_103_99).
 
 ## The Second Phase 
