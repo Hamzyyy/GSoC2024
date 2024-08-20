@@ -3,6 +3,13 @@
 ![gsoc_cern_banner_flat (1)](https://github.com/user-attachments/assets/0ca29584-9d71-429d-bf8d-c63a91dbfc2d)
 ![rtemsorg300x160 1 (1)](https://github.com/user-attachments/assets/bf08a22f-5f2c-49ae-9535-714905126d3e)
 
+
+![2](https://github.com/user-attachments/assets/35894b5c-dada-45de-9e51-39e7508d660e)
+![1](https://github.com/user-attachments/assets/2b749b0a-2ba1-42ba-9fbf-455e42d88ab4)
+
+
+
+
 ## Introduction
 Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at The American University in Cairo. My passion lies in low-level software development, electronics, and embedded systems.
 
@@ -155,15 +162,15 @@ My work focused on enabling systems to use a custom stack checker error handler,
 - **Testing Robustness**: Developing comprehensive test cases for various reporter configurations was both challenging and crucial.
 
 ### Accepted Merge Requests
-- **Configurable Stack Checker Reporter**:[Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86)
-- **New Test Cases for Configurable Stack Checker**:[Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161)
+- **Configurable Stack Checker Reporter**: [Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86)
+- **New Test Cases for Configurable Stack Checker**: [Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161)
 
 ### Ongoing Merge Requests
 - **Documentation Updates**: [Merge Request !41](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41)
 - **Specification Updates**: [Merge Request !4](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4)
 
 ### Code Merged Upstream
-- **Making Stack Checker Reporter Configurable**:[View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4)
-- **Adding Test Cases for Configurable Stack Checker**:[View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
+- **Making Stack Checker Reporter Configurable**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4)
+- **Adding Test Cases for Configurable Stack Checker**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
 
 
