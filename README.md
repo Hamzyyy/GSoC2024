@@ -10,7 +10,7 @@ My journey into embedded systems felt like discovering my true calling. Recently
 
 I stumbled upon Google Summer of Code (GSoC) and found [RTEMS](https://summerofcode.withgoogle.com/programs/2024/organizations/rtems-project) (Real-Time Executive for Multiprocessor Systems) participating. Without hesitation, I wanted to join the RTEMS community to contribute to their awesome project.
 
-I'm thrilled to share that I've been accepted into GSoC 2024 with RTEMS, an open-source real-time operating system used in critical applications, especially in the space industry—RTEMS has even orbited Venus, Mars, and the Sun!
+I'm thrilled to share that I've been accepted into GSoC 2024 with RTEMS, an open-source real-time operating system used in critical applications, especially in the space industry, RTEMS has already been part of missions to Mercury ([BepiColombo](http://www.rtems.com/node/83)) , the asteroid belt ([DAWN](https://x.com/RTEMS_OAR/status/1573410179278045185) and [DART](https://mobile.x.com/RTEMS_OAR/status/1570102995416662019)), and even around Jupiter (JUNO).
 
 My accepted [project](https://docs.google.com/document/d/1Kn02yQQNI9qHwup5kuGEhj-9l-dpnwYgYvFceXD-BxA/edit#heading=h.f0qomue69e9r) focuses on making the stack checker reporter configurable. Traditionally, RTEMS’ stack checker is initialized automatically with each task, and if a stack overflow occurs, it logs the task information and shuts down the system. My project aims to give users the flexibility to configure the response when a stack overflow is detected.
 
@@ -126,7 +126,7 @@ After finishing the main work I spend sometime improving the coding style. I upd
 
 In the final days of the summer, I focused on documenting the changes introduced. I submitted two merge requests: one for adding documentation on the stack checker reporter configuration, available [here](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41) and [here](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4).
 
-## The final Report
+## The Final Report
 
 And here we are, at the close of an incredible summer journey! This season, I had the opportunity to work on a [project](https://summerofcode.withgoogle.com/myprojects/details/li0Ns91L) which aims to gives the user the ability to configure the stack checker error handler and determine it's behavior based on their own requirements.
 
@@ -140,7 +140,30 @@ You can check out the approved merge request for the configurable stack checker 
 
 There's still ongoing work, including two merge requests for updating the [documentations](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41) and [specifications](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4).
 
-Reflecting on this amazing summer, I’m incredibly grateful for the opportunity. I’ve learned so much, especially during the challenging early days. With the support of my mentors, I made significant progress and gained invaluable experience. This was my first time working on such a large project with numerous dependencies. The manual build process was new to me, and I also learned how to use Git the right way—despite a few mishaps with my commit history! Most importantly, I overcame my initial fears and hesitations, thanks to my mentor's friendly and encouraging guidance. I can’t thank him enough. Thank you Joel!
+Reflecting on this amazing summer, I’m incredibly grateful for the opportunity. I’ve learned so much, especially during the challenging early days. With the support of my mentors, I made significant progress and gained invaluable experience. This was my first time working on such a large project with numerous dependencies. The manual build process was new to me, and I also learned how to use Git the right way despite a few mishaps with my commit history! Most importantly, I overcame my initial fears and hesitations, thanks to my mentor's friendly and encouraging guidance. I can’t thank him enough. Thank you Joel!
 
 I’m excited to continue being an active member of the RTEMS community and to contribute to many more exciting projects. Who knows, maybe one day my code will be part of a mission exploring Mars, Jupiter, and beyond!
+
+## Summary
+My work is focused on allwoing the systems to have a custom stack checker error handler, and gives the user the flexibility to include whatever features in that handler.
+
+### Project Challenges
+- **Getting Started with Git**: Managing commits in a large project was tough at first, and I made some mistakes, but I gained valuable experience in version control.
+- **Navigating the RTEMS Build System**: The manual build process was new to me, and it took time to master.
+- **Creating Configurable Macros**: Designing flexible preprocessor macros required careful implementation to ensure compatibility with RTEMS.
+- **Managing Multiple Dependencies**: Handling the interconnected inclusions and dependencies within the RTEMS project required careful attention to detail and a solid understanding of how changes could impact other parts of the system.
+- **Testing Robustness**: Developing thorough test cases for different reporter configurations was challenging but essential.
+
+### Accepted Merge Requests
+- [Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86).
+- [Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161).
+
+### Ongoing Merge Requests
+- [Merge Request !41](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41).
+- [Merge Request !4](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4).
+
+### Code Merged Upstream
+- [Making stack checker reporter configurable](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4).
+- [Adding test cases for the configurable stack checker](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
+
 
