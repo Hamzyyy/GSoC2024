@@ -30,12 +30,12 @@ This section covers the first phase of my participation in GSoC 2024, from the b
 - Cloned my forked repository to my local machine.
 - Created a new branch to contain all my work using the command ```git checkout -b feature/stack-reporter-config```.
 
-My primary goal was to make the stack checker reporter configurable, allowing users to select which reporter function to use in their applications. The default reporter provided by RTEMS was [Stack_check_report_blown_task](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L247-292) which is invoked by [rtems_stack_checker_switch_extension](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L298-341).
+My primary goal was to make the stack checker reporter configurable, allowing users to configure which reporter function - either provided by RTEMS or thier own - to use in their applications. The default reporter provided by RTEMS was [Stack_check_report_blown_task](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L247-292) which is invoked by [rtems_stack_checker_switch_extension](https://gitlab.rtems.org/Hamzi/rtems/-/blob/5/cpukit/libmisc/stackchk/check.c?ref_type=heads#L298-341).
 To achieve this I:
 - Renamed `Stack_check_report_blown_task` to `rtems_stack_checker_reporter_print_details` and made it a public function.
 - Created a new reporter function called `rtems_stack_checker_reporter_quiet` which only call fatal error handler.
-- Updated the configuration macro in`cpukit/include/rtems/confdefs/extensions.h`to allow users to select the desired reporter based on their configuration.
-- Developed a new test case `testsuite/libtests/stackchk03` to verify that the application selects the correct reporter based on the user’s configuration.
+- Updated the configuration macro in`cpukit/include/rtems/confdefs/extensions.h`to allow users to configure the desired reporter based on their application needs.
+- Developed a new test case `testsuite/libtests/stackchk03` to verify that the application uses the correct reporter based on the user’s configuration.
 - Edited grp.yml in `rtems/spec/build/testsuites/libtest` to include the new testsuite in the build process.
 - Added `stackch03.yml` file for the new test case in the same path above.
 
@@ -116,7 +116,7 @@ After that I created a draft merge request.
 You can view the changes I submitted just before the midterm evaluation period [here](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86/diffs?diff_id=2142&start_sha=0306a70f4366031e4c8dc5d0b1e4a25b6db60bdc#ba5d304e96c420f4fa6d1983a6f6d65bba76368f_103_99).
 
 ## The Second Phase 
-During the first phase of GSoC, my primary focus was to make the stack checker reporter configurable. I achieved this by designing a conditional preprocessor macro in `confdefs` that allows users to select the reporter function based on their application's configuration. Users can choose the default RTEMS reporter, a quiet/basic reporter or their own custom reporter. To ensure robustness, I developed the `stackchk03` test case to validate the behavior of different reporter configurations, which worked as expected.
+During the first phase of GSoC, my primary focus was to make the stack checker reporter configurable. I achieved this by designing a conditional preprocessor macro in `confdefs` that allows users to configure the reporter function based on their application's configuration. Users can choose the default RTEMS reporter, a quiet/basic reporter or their own custom reporter. To ensure robustness, I developed the `stackchk03` test case to validate the behavior of different reporter configurations, which worked as expected.
 
 In the second phase, after optimizing and cleaning the code, I proposed changing the default reporter to a quiet reporter that only calls the fatal error handler in case of a stack overflow. This simplifies the default functionality, leaving advanced configurations to the user. The proposal was accepted, and I developed `stackchk04` testsuite to cover the full functionality of the stack checker. The testsuites now have the following structure:
 - `stackchk` Tests the default quiet reporter.
