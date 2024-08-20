@@ -145,25 +145,25 @@ Reflecting on this amazing summer, I’m incredibly grateful for the opportunity
 I’m excited to continue being an active member of the RTEMS community and to contribute to many more exciting projects. Who knows, maybe one day my code will be part of a mission exploring Mars, Jupiter, and beyond!
 
 ## Summary
-My work is focused on allwoing the systems to have a custom stack checker error handler, and gives the user the flexibility to include whatever features in that handler.
+My work focused on enabling systems to use a custom stack checker error handler, providing users with the flexibility to incorporate specific features as needed.
 
 ### Project Challenges
-- **Getting Started with Git**: Managing commits in a large project was tough at first, and I made some mistakes, but I gained valuable experience in version control.
+- **Getting Started with Git**: Initially challenging, managing commits in a large project taught me valuable lessons in version control.
 - **Navigating the RTEMS Build System**: The manual build process was new to me, and it took time to master.
 - **Creating Configurable Macros**: Designing flexible preprocessor macros required careful implementation to ensure compatibility with RTEMS.
-- **Managing Multiple Dependencies**: Handling the interconnected inclusions and dependencies within the RTEMS project required careful attention to detail and a solid understanding of how changes could impact other parts of the system.
-- **Testing Robustness**: Developing thorough test cases for different reporter configurations was challenging but essential.
+- **Managing Multiple Dependencies**: Handling interconnected inclusions and dependencies required careful attention to detail and understanding the broader impact of changes.
+- **Testing Robustness**: Developing comprehensive test cases for various reporter configurations was both challenging and crucial.
 
 ### Accepted Merge Requests
-- [Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86).
-- [Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161).
+- **Configurable Stack Checker Reporter**:[Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86)
+- **New Test Cases for Configurable Stack Checker**:[Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161)
 
 ### Ongoing Merge Requests
-- [Merge Request !41](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41).
-- [Merge Request !4](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4).
+- **Documentation Updates**: [Merge Request !41](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41)
+- **Specification Updates**: [Merge Request !4](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4)
 
 ### Code Merged Upstream
-- [Making stack checker reporter configurable](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4).
-- [Adding test cases for the configurable stack checker](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
+- **Making Stack Checker Reporter Configurable**:[View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4)
+- **Adding Test Cases for Configurable Stack Checker**:[View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
 
 
