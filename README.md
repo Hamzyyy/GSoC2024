@@ -1,14 +1,7 @@
 # Google Summer of Code 2024 (GSoC 2024)
 
-![gsoc_cern_banner_flat (1)](https://github.com/user-attachments/assets/0ca29584-9d71-429d-bf8d-c63a91dbfc2d)
-![rtemsorg300x160 1 (1)](https://github.com/user-attachments/assets/bf08a22f-5f2c-49ae-9535-714905126d3e)
-
-
-![2](https://github.com/user-attachments/assets/35894b5c-dada-45de-9e51-39e7508d660e)
-![1](https://github.com/user-attachments/assets/2b749b0a-2ba1-42ba-9fbf-455e42d88ab4)
-
-
-
+   ![2](https://github.com/user-attachments/assets/35894b5c-dada-45de-9e51-39e7508d660e)
+   ![1](https://github.com/user-attachments/assets/2b749b0a-2ba1-42ba-9fbf-455e42d88ab4)
 
 ## Introduction
 Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at The American University in Cairo. My passion lies in low-level software development, electronics, and embedded systems.
