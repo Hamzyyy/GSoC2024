@@ -5,8 +5,7 @@
 
 ## Make Stack Overflow Checker Error Handler Configurable
 
-### Mohamed Hassan
-muhammad.hamdy.hassan@gmail.com
+### Mohamed Hassan muhammad.hamdy.hassan@gmail.com
 
 ## Introduction
 Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at The American University in Cairo. My passion lies in low-level software development, electronics, and embedded systems.
