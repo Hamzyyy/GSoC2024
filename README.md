@@ -4,13 +4,13 @@
    ![1](https://github.com/user-attachments/assets/2b749b0a-2ba1-42ba-9fbf-455e42d88ab4)
 
 ## Description
-**Organisation**: Real-Time Executive for Multiprocessor Systems (RTEMS).
+**Organisation**: Real-Time Executive for Multiprocessor Systems (RTEMS)
 
-**Project Title**: Make Stack Checker Error Handler Configurable.
+**Project Title**: Make Stack Checker Error Handler Configurable
 
 **Contributor**:  Mohamed Hassan <muhammad.hamdy.hassan@gmail.com>
 
-**Mentor**: Joel Sherrill, Gedare Bloom. 
+**Mentor**: Joel Sherrill, Gedare Bloom.
 
 ## Introduction
 Hello! I'm Mohamed Hassan, currently pursuing a master’s degree in Robotics at The American University in Cairo. My passion lies in low-level software development, electronics, and embedded systems.
