@@ -5,8 +5,11 @@
 
 ## Description
 **Organisation**: Real-Time Executive for Multiprocessor Systems (RTEMS).
+
 **Project Title**: Make Stack Overflow Checker Error Handler Configurable.
+
 **Contributor**:  Mohamed Hassan <muhammad.hamdy.hassan@gmail.com>
+
 **Mentor**: Joel Sherrill, Gedare Bloom. 
 
 ## Introduction
