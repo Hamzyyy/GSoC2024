@@ -141,7 +141,7 @@ And here we are, at the close of an incredible summer journey! This season, I ha
 
 focused on giving users the ability to configure the stack checker error handler, allowing them to tailor its behavior to their specific needs.
 
-I developed a method that enables users to configure the stack checker reporter in their applications, choosing from three options: a basic quiet reporter, a detailed reporter, or their own custom reporter. Alongside this, I created test cases for each type of error handler to ensure everything works smoothly.
+I developed a method that enables users to configure the stack checker reporter in their applications, choosing from three options: a basic quiet reporter, a detailed reporter, or their own custom reporter. Alongside this, I created test cases for each type of the reporters to ensure everything works smoothly.
 
 Currently, I'm still in the process of updating the RTEMS documentation to reflect the new features added during this project. The documentation is nearly complete and will be merged soon.
 
