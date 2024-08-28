@@ -23,6 +23,30 @@ I'm thrilled to share that I've been accepted into GSoC 2024 with RTEMS, an open
 
 My accepted [project](https://docs.google.com/document/d/1Kn02yQQNI9qHwup5kuGEhj-9l-dpnwYgYvFceXD-BxA/edit#heading=h.f0qomue69e9r) focuses on making the stack checker reporter configurable. Traditionally, RTEMS’ stack checker is initialized automatically with each task, and if a stack overflow occurs, it logs the task information and shuts down the system. My project aims to give users the flexibility to configure the response when a stack overflow is detected.
 
+## Work Summary
+For those who are TLDR. here's a summary of my work this summer. 
+
+My work focused on enabling systems to use a custom stack checker error handler, providing users with the flexibility to incorporate specific features as needed.
+
+### Project Challenges
+- **Getting Started with Git**: Initially challenging, managing commits in a large project taught me valuable lessons in version control.
+- **Navigating the RTEMS Build System**: The manual build process was new to me, and it took time to master.
+- **Creating Configurable Macros**: Designing flexible preprocessor macros required careful implementation to ensure compatibility with RTEMS.
+- **Managing Multiple Dependencies**: Handling interconnected inclusions and dependencies required careful attention to detail and understanding the broader impact of changes.
+- **Testing Robustness**: Developing comprehensive test cases for various reporter configurations was both challenging and crucial.
+
+### Accepted Merge Requests
+- **Configurable Stack Checker Reporter**: [Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86)
+- **New Test Cases for Configurable Stack Checker**: [Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161)
+
+### Ongoing Merge Requests
+- **Documentation Updates**: [Merge Request !41](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41)
+- **Specification Updates**: [Merge Request !4](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4)
+
+### Code Merged Upstream
+- **Making Stack Checker Reporter Configurable**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4)
+- **Adding Test Cases for Configurable Stack Checker**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
+
 ## The Community Bonding Period
 During the community bonding period, I engaged with the RTEMS community and focused on understanding the stack checker's error handler in depth. I created a mind map to visualize the functions and utilities provided by the stack checker.
 <img width="12384" alt="Untitled" src="https://github.com/user-attachments/assets/326c92ac-f9fb-4663-b131-11ab2eb22a4c">
@@ -152,27 +176,5 @@ There's still ongoing work, including two merge requests for updating the [docum
 Reflecting on this amazing summer, I’m incredibly grateful for the opportunity. I’ve learned so much, especially during the challenging early days. With the support of my mentors, I made significant progress and gained invaluable experience. This was my first time working on such a large project with numerous dependencies. The manual build process was new to me, and I also learned how to use Git the right way despite a few mishaps with my commit history! Most importantly, I overcame my initial fears and hesitations, thanks to my mentor's friendly and encouraging guidance. I can’t thank him enough. Thank you Joel!
 
 I’m excited to continue being an active member of the RTEMS community and to contribute to many more exciting projects. Who knows, maybe one day my code will be part of a mission exploring Mars, Jupiter, and beyond!
-
-## Summary
-My work focused on enabling systems to use a custom stack checker error handler, providing users with the flexibility to incorporate specific features as needed.
-
-### Project Challenges
-- **Getting Started with Git**: Initially challenging, managing commits in a large project taught me valuable lessons in version control.
-- **Navigating the RTEMS Build System**: The manual build process was new to me, and it took time to master.
-- **Creating Configurable Macros**: Designing flexible preprocessor macros required careful implementation to ensure compatibility with RTEMS.
-- **Managing Multiple Dependencies**: Handling interconnected inclusions and dependencies required careful attention to detail and understanding the broader impact of changes.
-- **Testing Robustness**: Developing comprehensive test cases for various reporter configurations was both challenging and crucial.
-
-### Accepted Merge Requests
-- **Configurable Stack Checker Reporter**: [Merge Request !86](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/86)
-- **New Test Cases for Configurable Stack Checker**: [Merge Request !161](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/161)
-
-### Ongoing Merge Requests
-- **Documentation Updates**: [Merge Request !41](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/41)
-- **Specification Updates**: [Merge Request !4](https://gitlab.rtems.org/rtems/prequal/rtems-central/-/merge_requests/4)
-
-### Code Merged Upstream
-- **Making Stack Checker Reporter Configurable**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4)
-- **Adding Test Cases for Configurable Stack Checker**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
 
 
