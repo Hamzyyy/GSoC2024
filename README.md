@@ -47,6 +47,8 @@ My work focused on enabling systems to use a custom stack checker error handler,
 - **Making Stack Checker Reporter Configurable**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/dc123bb828251b4e567390e9b6cfcae48af967b4)
 - **Adding Test Cases for Configurable Stack Checker**: [View Commit](https://gitlab.rtems.org/rtems/rtos/rtems/-/commit/6ab27bb54e5c056ca7ef605f79fffc7869d1ce9b)
 
+The following sections contains details about my project with GSoC & RTEMS during the summer.
+
 ## The Community Bonding Period
 During the community bonding period, I engaged with the RTEMS community and focused on understanding the stack checker's error handler in depth. I created a mind map to visualize the functions and utilities provided by the stack checker.
 <img width="12384" alt="Untitled" src="https://github.com/user-attachments/assets/326c92ac-f9fb-4663-b131-11ab2eb22a4c">
