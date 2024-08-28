@@ -24,7 +24,7 @@ I'm thrilled to share that I've been accepted into GSoC 2024 with RTEMS, an open
 My accepted [project](https://docs.google.com/document/d/1Kn02yQQNI9qHwup5kuGEhj-9l-dpnwYgYvFceXD-BxA/edit#heading=h.f0qomue69e9r) focuses on making the stack checker reporter configurable. Traditionally, RTEMS’ stack checker is initialized automatically with each task, and if a stack overflow occurs, it logs the task information and shuts down the system. My project aims to give users the flexibility to configure the response when a stack overflow is detected.
 
 ## Work Summary
-For those who are TLDR. here's a summary of my work this summer. 
+For those who are TLDR. Here's a summary of my work this summer. 
 
 My work focused on enabling systems to use a custom stack checker error handler, providing users with the flexibility to incorporate specific features as needed.
 
