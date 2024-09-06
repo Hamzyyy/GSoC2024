@@ -82,7 +82,7 @@ cd rtems
 ```
 Set up the environment path:
 ```
-export PATH=$HOME/rtems/rtems/6/bin:"$PATH"``
+export PATH=$HOME/rtems/rtems/6/bin:"$PATH"
 ```
 Verify the compiler installation:
 ```
