@@ -82,8 +82,10 @@ cd rtems
 ```
 Set up the environment path:
 ```
-export PATH=$HOME/rtems/rtems/6/bin:"$PATH"
+export PATH=$HOME/rtems/6/bin:"$PATH"
 ```
+You can change that path to you actual path.
+
 Verify the compiler installation:
 ```
 command -v sparc-rtems6-gcc && echo "found" || echo "not found"
